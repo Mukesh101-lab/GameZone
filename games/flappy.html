@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flappy Bird - Play Free Online | GameZone</title>
+
+    <meta name="description"
+        content="Play Flappy Bird style game online for free. Fly through the pipes and beat your high score.">
+
+    <link rel="stylesheet" href="flappy.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="game-header">
+
+        <a href="../index.html" class="back-btn">
+            ← GameZone
+        </a>
+
+        <h1>🐦 Flappy Bird</h1>
+
+        <div class="score-box">
+            Score: <span id="score">0</span>
+        </div>
+
+    </header>
+
+
+    <!-- Advertisement -->
+    <div class="ad-container">
+        <span>ADVERTISEMENT</span>
+    </div>
+
+
+    <!-- Game -->
+    <main class="game-container">
+
+        <div class="game-info">
+
+            <div>
+                <span>🏆 High Score</span>
+                <strong id="highScore">0</strong>
+            </div>
+
+            <div>
+                <span>⭐ Score</span>
+                <strong id="currentScore">0</strong>
+            </div>
+
+        </div>
+
+
+        <div class="canvas-wrapper">
+
+            <canvas id="gameCanvas" width="400" height="600">
+            </canvas>
+
+
+            <!-- Start Screen -->
+            <div id="startScreen" class="overlay">
+
+                <h2>🐦 Flappy Bird</h2>
+
+                <p>
+                    Tap or press Space to fly!
+                </p>
+
+                <button onclick="startGame()">
+                    ▶ Start Game
+                </button>
+
+            </div>
+
+
+            <!-- Game Over -->
+            <div id="gameOver" class="overlay">
+
+                <h2>Game Over 😢</h2>
+
+                <p>
+                    Your Score:
+                    <strong id="finalScore">0</strong>
+                </p>
+
+                <button onclick="restartGame()">
+                    🔄 Play Again
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Control -->
+
+        <button class="fly-btn" onclick="flap()">
+            🐦 FLAP
+        </button>
+
+
+        <p class="instructions">
+            Press <b>SPACE</b>, <b>↑</b> or tap the FLAP button.
+        </p>
+
+    </main>
+
+
+    <!-- Advertisement -->
+
+    <div class="ad-container bottom-ad">
+        <span>ADVERTISEMENT</span>
+    </div>
+
+
+    <script src="flappy.js"></script>
+
+</body>
+
+</html>

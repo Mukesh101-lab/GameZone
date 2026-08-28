@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameZone - Free Online Games</title>
+
+    <meta name="description"
+        content="Play free online games on GameZone including Snake, Brick Breaker, Flappy Bird, Tic Tac Toe, Space Shooter and Memory Game.">
+
+    <meta name="keywords"
+        content="free online games, browser games, snake game, flappy bird, tic tac toe, space shooter, memory game, brick breaker">
+
+    <meta name="author" content="GameZone">
+
+    <meta name="robots" content="index, follow">
+
+
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="GameZone - Free Online Games">
+
+    <meta property="og:description" content="Play fun and free browser games directly online.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://YOUR-DOMAIN.com">
+
+    <meta property="og:image" content="https://YOUR-DOMAIN.com/assets/images/og-image.jpg">
+
+
+    <!-- Canonical -->
+
+    <link rel="canonical" href="https://YOUR-DOMAIN.com">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            🎮 GameZone
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="#games">
+                Games
+            </a>
+
+            <a href="pages/about.html">
+                About
+            </a>
+
+            <a href="pages/contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">🔥 PLAY • COMPETE • WIN</p>
+
+            <h1>
+                Your Ultimate
+                <span>Gaming Hub</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover exciting free online games.
+                Challenge yourself, beat your high score
+                and have fun!
+            </p>
+
+            <div class="hero-buttons">
+                <button class="main-btn" onclick="scrollToGames()">
+                    🎮 Explore Games
+                </button>
+
+                <button class="secondary-btn" onclick="showMessage()">
+                    🏆 Leaderboard
+                </button>
+            </div>
+
+        </div>
+
+        <div class="hero-game">
+
+            <div class="controller">
+                🎮
+            </div>
+
+            <div class="floating-card card-one">
+                🏆 High Score
+                <strong>9,850</strong>
+            </div>
+
+            <div class="floating-card card-two">
+                🔥 Players Online
+                <strong>1,248+</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Ad Placeholder -->
+    <div class="ad-container">
+        <span>ADVERTISEMENT</span>
+    </div>
+
+
+    <!-- Games Section -->
+    <section class="games-section" id="games">
+
+        <div class="section-heading">
+            <div>
+                <p class="small-title">EXPLORE</p>
+                <h2>Popular Games 🎮</h2>
+            </div>
+
+            <button class="view-all" onclick="showMessage()">
+                View All →
+            </button>
+        </div>
+
+
+        <div class="game-grid">
+
+            <!-- Game 1 -->
+            <div class="game-card">
+
+                <div class="game-image snake">
+                    🐍
+                </div>
+
+                <div class="game-info">
+                    <h3>Snake Game</h3>
+                    <p>Arcade • Casual</p>
+                    <p>
+                        Control the snake, eat food and
+                        beat your highest score.
+                    </p>
+                    <button onclick="window.location.href='games/snake.html'">
+                        Play Game →
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- Game 2 -->
+            <div class="game-card">
+
+                <div class="game-image breakout">
+                    🧱
+                </div>
+
+                <div class="game-info">
+                    <h3>Brick Breaker</h3>
+                    <p>Arcade • Action</p>
+
+                    <button onclick="window.location.href='games/brick.html'">
+                        Play Game →
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- Game 3 -->
+            <div class="game-card">
+
+                <div class="game-image flappy">
+                    🐦
+                </div>
+
+                <div class="game-info">
+                    <h3>Flappy Bird</h3>
+                    <p>Casual • Skill</p>
+
+                    <button onclick="window.location.href='games/flappy.html'">
+                        Play Game →
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- Game 4 -->
+            <div class="game-card">
+
+                <div class="game-image tictactoe">
+                    ❌⭕
+                </div>
+
+                <div class="game-info">
+                    <h3>Tic Tac Toe</h3>
+                    <p>Strategy • Puzzle</p>
+
+                    <button onclick="window.location.href='games/tictactoe.html'">
+                        Play Game →
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- Game 5 -->
+            <div class="game-card">
+
+                <div class="game-image shooter">
+                    🚀
+                </div>
+
+                <div class="game-info">
+                    <h3>Space Shooter</h3>
+                    <p>Action • Shooter</p>
+
+                    <button onclick="window.location.href='games/space.html'">
+                        Play Game →
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- Game 6 -->
+            <div class="game-card">
+
+                <div class="game-image memory">
+                    🧠
+                </div>
+
+                <div class="game-info">
+                    <h3>Memory Game</h3>
+                    <p>Puzzle • Brain</p>
+
+                    <button onclick="window.location.href='games/memory.html'">
+                        Play Game →
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+
+        <p class="small-title">BROWSE</p>
+
+        <h2>Game Categories</h2>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                🎯
+                <h3>Arcade</h3>
+                <p>25+ Games</p>
+            </div>
+
+            <div class="category-card">
+                🧩
+                <h3>Puzzle</h3>
+                <p>18+ Games</p>
+            </div>
+
+            <div class="category-card">
+                🚀
+                <h3>Action</h3>
+                <p>30+ Games</p>
+            </div>
+
+            <div class="category-card">
+                🏎️
+                <h3>Racing</h3>
+                <p>15+ Games</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <h2>Welcome to GameZone 🎮</h2>
+
+        <p>
+            GameZone is your destination for fun and exciting
+            browser games. Play directly from your browser
+            without downloading anything.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h2>🎮 GameZone</h2>
+
+                <p>
+                    Play free online games,
+                    anytime and anywhere.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="#games">
+                    Games
+                </a>
+
+                <a href="pages/about.html">
+                    About Us
+                </a>
+
+                <a href="pages/contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Legal</h3>
+
+                <a href="pages/privacy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="pages/terms.html">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 GameZone.
+            All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

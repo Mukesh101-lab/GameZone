@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memory Game - Play Free Online | GameZone</title>
+
+    <meta name="description"
+        content="Play Memory Card Game online for free. Match all the cards using the fewest possible moves.">
+
+    <link rel="stylesheet" href="memory.css">
+</head>
+
+<body>
+
+    <header class="game-header">
+
+        <a href="../index.html" class="back-btn">
+            ← GameZone
+        </a>
+
+        <h1>🧠 Memory Game</h1>
+
+        <div class="score-box">
+            Moves: <span id="moves">0</span>
+        </div>
+
+    </header>
+
+
+    <div class="ad-container">
+        <span>ADVERTISEMENT</span>
+    </div>
+
+
+    <main class="game-container">
+
+        <div class="stats">
+
+            <div>
+                <span>⏱️ Time</span>
+                <strong id="timer">0s</strong>
+            </div>
+
+            <div>
+                <span>🎯 Matches</span>
+                <strong id="matches">0 / 8</strong>
+            </div>
+
+            <div>
+                <span>🏆 Best</span>
+                <strong id="bestScore">--</strong>
+            </div>
+
+        </div>
+
+
+        <div id="gameBoard" class="game-board"></div>
+
+
+        <div id="result" class="result">
+
+            <h2>🎉 You Won!</h2>
+
+            <p>
+                You completed the game in
+                <strong id="finalMoves">0</strong>
+                moves.
+            </p>
+
+            <p>
+                Time:
+                <strong id="finalTime">0s</strong>
+            </p>
+
+            <button onclick="startGame()">
+                🔄 Play Again
+            </button>
+
+        </div>
+
+
+        <button class="new-game-btn" onclick="startGame()">
+
+            🔄 New Game
+
+        </button>
+
+
+        <p class="instructions">
+            Find all matching pairs of cards.
+            <br>
+            Try to finish with fewer moves!
+        </p>
+
+    </main>
+
+
+    <div class="ad-container bottom-ad">
+        <span>ADVERTISEMENT</span>
+    </div>
+
+
+    <script src="memory.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snake Game - Play Free Online | GameZone</title>
+
+    <meta name="description"
+        content="Play the classic Snake game online for free. Eat food, grow your snake and achieve the highest score.">
+
+    <link rel="stylesheet" href="snake.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="game-header">
+
+        <a href="../index.html" class="back-btn">
+            ← GameZone
+        </a>
+
+        <h1>🐍 Snake Game</h1>
+
+        <div class="score-box">
+            Score: <span id="score">0</span>
+        </div>
+
+    </header>
+
+
+    <!-- Ad Space -->
+    <div class="ad-container">
+        <span>ADVERTISEMENT</span>
+    </div>
+
+
+    <!-- Game Area -->
+    <main class="game-container">
+
+        <div class="game-info">
+
+            <div>
+                <span>🏆 High Score</span>
+                <strong id="highScore">0</strong>
+            </div>
+
+            <div>
+                <span>⭐ Score</span>
+                <strong id="mobileScore">0</strong>
+            </div>
+
+        </div>
+
+
+        <div class="canvas-wrapper">
+
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+            <div id="gameOver" class="game-over">
+
+                <h2>Game Over 😢</h2>
+
+                <p>
+                    Your Score:
+                    <strong id="finalScore">0</strong>
+                </p>
+
+                <button onclick="restartGame()">
+                    🔄 Play Again
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Controls -->
+        <div class="controls">
+
+            <button onclick="changeDirection('UP')">⬆️</button>
+
+            <div>
+                <button onclick="changeDirection('LEFT')">⬅️</button>
+                <button onclick="changeDirection('DOWN')">⬇️</button>
+                <button onclick="changeDirection('RIGHT')">➡️</button>
+            </div>
+
+        </div>
+
+
+        <p class="instructions">
+            Use <b>Arrow Keys</b> or the buttons to control the snake.
+        </p>
+
+    </main>
+
+
+    <!-- Bottom Ad -->
+    <div class="ad-container bottom-ad">
+        <span>ADVERTISEMENT</span>
+    </div>
+
+
+    <script src="snake.js"></script>
+
+</body>
+
+</html>

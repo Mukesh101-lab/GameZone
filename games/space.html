@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Space Shooter - Play Free Online | GameZone</title>
+
+    <meta name="description"
+        content="Play Space Shooter online for free. Destroy enemy ships, survive waves and beat your high score.">
+
+    <link rel="stylesheet" href="space.css">
+</head>
+
+<body>
+
+    <header class="game-header">
+
+        <a href="../index.html" class="back-btn">
+            ← GameZone
+        </a>
+
+        <h1>🚀 Space Shooter</h1>
+
+        <div class="score-box">
+            Score: <span id="score">0</span>
+        </div>
+
+    </header>
+
+
+    <div class="ad-container">
+        <span>ADVERTISEMENT</span>
+    </div>
+
+
+    <main class="game-container">
+
+        <div class="game-info">
+
+            <div>
+                <span>🏆 High Score</span>
+                <strong id="highScore">0</strong>
+            </div>
+
+            <div>
+                <span>❤️ Lives</span>
+                <strong id="lives">3</strong>
+            </div>
+
+        </div>
+
+
+        <div class="canvas-wrapper">
+
+            <canvas id="gameCanvas" width="480" height="600">
+            </canvas>
+
+
+            <div id="startScreen" class="overlay">
+
+                <h2>🚀 Space Shooter</h2>
+
+                <p>
+                    Destroy the enemy ships!
+                </p>
+
+                <button onclick="startGame()">
+                    ▶ Start Game
+                </button>
+
+            </div>
+
+
+            <div id="gameOver" class="overlay">
+
+                <h2>Game Over 💥</h2>
+
+                <p>
+                    Your Score:
+                    <strong id="finalScore">0</strong>
+                </p>
+
+                <button onclick="restartGame()">
+                    🔄 Play Again
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="mobile-controls">
+
+            <button onclick="movePlayer('LEFT')">
+                ⬅️
+            </button>
+
+            <button onclick="shoot()">
+                🔥
+            </button>
+
+            <button onclick="movePlayer('RIGHT')">
+                ➡️
+            </button>
+
+        </div>
+
+
+        <p class="instructions">
+            Use <b>← →</b> or <b>A D</b> to move.
+            Press <b>SPACE</b> to shoot.
+        </p>
+
+    </main>
+
+
+    <div class="ad-container bottom-ad">
+        <span>ADVERTISEMENT</span>
+    </div>
+
+
+    <script src="space.js"></script>
+
+</body>
+
+</html>

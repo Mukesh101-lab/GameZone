@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic Tac Toe - Play Free Online | GameZone</title>
+
+    <meta name="description"
+        content="Play Tic Tac Toe online for free. Challenge a friend or play against the computer.">
+
+    <link rel="stylesheet" href="tictactoe.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="game-header">
+
+        <a href="../index.html" class="back-btn">
+            ← GameZone
+        </a>
+
+        <h1>❌ Tic Tac Toe ⭕</h1>
+
+        <div class="score-box">
+            Games: <span id="gamesPlayed">0</span>
+        </div>
+
+    </header>
+
+
+    <!-- Advertisement -->
+    <div class="ad-container">
+        <span>ADVERTISEMENT</span>
+    </div>
+
+
+    <!-- Main -->
+    <main class="game-container">
+
+        <!-- Mode Selection -->
+
+        <div class="mode-selection">
+
+            <button id="twoPlayerBtn" class="mode-btn active" onclick="setMode('twoPlayer')">
+                👥 2 Players
+            </button>
+
+            <button id="computerBtn" class="mode-btn" onclick="setMode('computer')">
+                🤖 Vs Computer
+            </button>
+
+        </div>
+
+
+        <!-- Score -->
+
+        <div class="score-board">
+
+            <div class="player-score">
+
+                <span>❌ Player X</span>
+
+                <strong id="xScore">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="player-score">
+
+                <span>⭕ Player O</span>
+
+                <strong id="oScore">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="player-score">
+
+                <span>🤝 Draw</span>
+
+                <strong id="drawScore">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- Turn -->
+
+        <div class="turn">
+
+            <span id="turnText">
+                Player X's Turn
+            </span>
+
+        </div>
+
+
+        <!-- Board -->
+
+        <div class="board" id="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </div>
+
+
+        <!-- Result -->
+
+        <div id="result" class="result">
+
+            <h2 id="resultTitle">
+                Player X Wins! 🎉
+            </h2>
+
+            <button onclick="newGame()">
+                🔄 New Game
+            </button>
+
+        </div>
+
+
+        <!-- New Game -->
+
+        <button class="new-game-btn" onclick="newGame()">
+
+            🔄 New Game
+
+        </button>
+
+
+        <p class="instructions">
+
+            Select a mode and start playing!
+            <br>
+            X always plays first.
+
+        </p>
+
+    </main>
+
+
+    <!-- Advertisement -->
+
+    <div class="ad-container bottom-ad">
+
+        <span>ADVERTISEMENT</span>
+
+    </div>
+
+
+    <script src="tictactoe.js"></script>
+
+</body>
+
+</html>

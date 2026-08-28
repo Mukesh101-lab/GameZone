@@ -1,51 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<urlset
-    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://YOUR-DOMAIN.com/</loc>
+        <loc>https://game-zone-blond.vercel.app/</loc>
     </url>
 
     <url>
-        <loc>https://YOUR-DOMAIN.com/games/snake.html</loc>
+        <loc>https://game-zone-blond.vercel.app/games/snake.html</loc>
     </url>
 
     <url>
-        <loc>https://YOUR-DOMAIN.com/games/brick.html</loc>
+        <loc>https://game-zone-blond.vercel.app/games/brick.html</loc>
     </url>
 
     <url>
-        <loc>https://YOUR-DOMAIN.com/games/flappy.html</loc>
+        <loc>https://game-zone-blond.vercel.app/games/flappy.html</loc>
     </url>
 
     <url>
-        <loc>https://YOUR-DOMAIN.com/games/tictactoe.html</loc>
+        <loc>https://game-zone-blond.vercel.app/games/tictactoe.html</loc>
     </url>
 
     <url>
-        <loc>https://YOUR-DOMAIN.com/games/space.html</loc>
+        <loc>https://game-zone-blond.vercel.app/games/space.html</loc>
     </url>
 
     <url>
-        <loc>https://YOUR-DOMAIN.com/games/memory.html</loc>
+        <loc>https://game-zone-blond.vercel.app/games/memory.html</loc>
     </url>
 
     <url>
-        <loc>https://YOUR-DOMAIN.com/pages/about.html</loc>
+        <loc>https://game-zone-blond.vercel.app/pages/about.html</loc>
     </url>
 
     <url>
-        <loc>https://YOUR-DOMAIN.com/pages/contact.html</loc>
+        <loc>https://game-zone-blond.vercel.app/pages/contact.html</loc>
     </url>
 
     <url>
-        <loc>https://YOUR-DOMAIN.com/pages/privacy.html</loc>
+        <loc>https://game-zone-blond.vercel.app/pages/privacy.html</loc>
     </url>
 
     <url>
-        <loc>https://YOUR-DOMAIN.com/pages/terms.html</loc>
+        <loc>https://game-zone-blond.vercel.app/pages/terms.html</loc>
     </url>
 
 </urlset>
-

@@ -22,6 +22,16 @@ document.getElementById("highScore").textContent = highScore;
 // Start Game
 function startGame() {
 
+    // Google Analytics - Track game start
+    if (typeof gtag === "function") {
+
+        gtag("event", "game_start", {
+            game_name: "Snake"
+        });
+
+    }
+
+
     snake = [
         {
             x: 200,

@@ -1,6 +1,4 @@
-
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
-
+Sitemap: https://game-zone-blond.vercel.app/sitemap.xml

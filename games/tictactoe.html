@@ -1,22 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tic Tac Toe - Play Free Online | GameZone</title>
+
+    <!-- SEO -->
+
+    <title>Tic Tac Toe Game - Play Free Online | GameZone</title>
 
     <meta name="description"
-        content="Play Tic Tac Toe online for free. Challenge a friend or play against the computer.">
+        content="Play Tic Tac Toe online for free on GameZone. Challenge a friend in 2-player mode or play against the computer. No download required.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="author" content="GameZone">
+
+
+    <!-- Canonical URL -->
+
+    <link rel="canonical"
+        href="https://game-zone-blond.vercel.app/games/tictactoe.html">
+
+
+    <!-- Open Graph -->
+
+    <meta property="og:title"
+        content="Tic Tac Toe Game - Play Free Online | GameZone">
+
+    <meta property="og:description"
+        content="Play Tic Tac Toe online for free. Challenge a friend or play against the computer in this classic strategy game.">
+
+    <meta property="og:type"
+        content="website">
+
+    <meta property="og:url"
+        content="https://game-zone-blond.vercel.app/games/tictactoe.html">
+
+    <meta property="og:site_name"
+        content="GameZone">
+
+
+    <!-- Stylesheet -->
 
     <link rel="stylesheet" href="tictactoe.css">
 
+
     <!-- Google Analytics -->
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQTNL81HJW"></script>
+    <script async
+        src="https://www.googletagmanager.com/gtag/js?id=G-ZQTNL81HJW">
+    </script>
 
     <script>
+
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -26,14 +67,18 @@
         gtag('js', new Date());
 
         gtag('config', 'G-ZQTNL81HJW');
+
     </script>
 
     <!-- End Google Analytics -->
+
 </head>
+
 
 <body>
 
     <!-- Header -->
+
     <header class="game-header">
 
         <a href="../index.html" class="back-btn">
@@ -50,24 +95,38 @@
 
 
     <!-- Advertisement -->
+
     <div class="ad-container">
+
         <span>ADVERTISEMENT</span>
+
     </div>
 
 
     <!-- Main -->
+
     <main class="game-container">
+
 
         <!-- Mode Selection -->
 
         <div class="mode-selection">
 
-            <button id="twoPlayerBtn" class="mode-btn active" onclick="setMode('twoPlayer')">
+            <button id="twoPlayerBtn"
+                class="mode-btn active"
+                onclick="setMode('twoPlayer')">
+
                 👥 2 Players
+
             </button>
 
-            <button id="computerBtn" class="mode-btn" onclick="setMode('computer')">
+
+            <button id="computerBtn"
+                class="mode-btn"
+                onclick="setMode('computer')">
+
                 🤖 Vs Computer
+
             </button>
 
         </div>
@@ -169,7 +228,9 @@
         <p class="instructions">
 
             Select a mode and start playing!
+
             <br>
+
             X always plays first.
 
         </p>
@@ -191,3 +252,4 @@
 </body>
 
 </html>
+

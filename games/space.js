@@ -58,7 +58,7 @@ function createPlayer() {
 
         height: 40,
 
-        speed: 6
+        speed: 9
 
     };
 
@@ -464,7 +464,7 @@ function shoot() {
 
         height: 14,
 
-        speed: 8
+        speed: 12
 
     });
 
@@ -942,7 +942,7 @@ function movePlayer(direction) {
         direction === "LEFT"
     ) {
 
-        player.x -= 45;
+        player.x -= 70;
 
     }
 
@@ -951,7 +951,7 @@ function movePlayer(direction) {
         direction === "RIGHT"
     ) {
 
-        player.x += 45;
+        player.x += 70;
 
     }
 

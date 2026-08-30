@@ -36,7 +36,7 @@ const birdSize = 28;
 
 const gravity = 0.28;
 
-const jumpStrength = -5;
+const jumpStrength = -5.5;
 
 
 function createBird() {

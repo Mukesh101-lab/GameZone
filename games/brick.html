@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,26 +22,21 @@
 
     <!-- Canonical URL -->
 
-    <link rel="canonical"
-        href="https://game-zone-blond.vercel.app/games/brick.html">
+    <link rel="canonical" href="https://game-zone-blond.vercel.app/games/brick.html">
 
 
     <!-- Open Graph -->
 
-    <meta property="og:title"
-        content="Brick Breaker - Play Free Online | GameZone">
+    <meta property="og:title" content="Brick Breaker - Play Free Online | GameZone">
 
     <meta property="og:description"
         content="Break bricks, keep the ball alive and achieve a high score in this free online Brick Breaker game.">
 
-    <meta property="og:type"
-        content="website">
+    <meta property="og:type" content="website">
 
-    <meta property="og:url"
-        content="https://game-zone-blond.vercel.app/games/brick.html">
+    <meta property="og:url" content="https://game-zone-blond.vercel.app/games/brick.html">
 
-    <meta property="og:site_name"
-        content="GameZone">
+    <meta property="og:site_name" content="GameZone">
 
 
     <!-- Stylesheet -->
@@ -52,8 +46,7 @@
 
     <!-- Google Analytics -->
 
-    <script async
-        src="https://www.googletagmanager.com/gtag/js?id=G-ZQTNL81HJW">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQTNL81HJW">
     </script>
 
     <script>
@@ -184,11 +177,13 @@
 
         <div class="mobile-controls">
 
-            <button onclick="movePaddle('LEFT')">
+            <button onmousedown="startPaddleMove('LEFT')" onmouseup="stopPaddleMove()" onmouseleave="stopPaddleMove()"
+                ontouchstart="startPaddleMove('LEFT')" ontouchend="stopPaddleMove()">
                 ⬅️
             </button>
 
-            <button onclick="movePaddle('RIGHT')">
+            <button onmousedown="startPaddleMove('RIGHT')" onmouseup="stopPaddleMove()" onmouseleave="stopPaddleMove()"
+                ontouchstart="startPaddleMove('RIGHT')" ontouchend="stopPaddleMove()">
                 ➡️
             </button>
 
@@ -214,4 +209,3 @@
 </body>
 
 </html>
-

@@ -310,6 +310,10 @@ nav a:hover {
 .car {
     background: #1b172b;
 }
+
+.bubble {
+    background: #171d35;
+}
 .game-info {
     padding: 20px;
 }

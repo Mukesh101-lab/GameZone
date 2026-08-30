@@ -1,19 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>Bubble Shooter - Play Free Online | GameZone</title>
 
     <meta name="description"
-        content="Play Bubble Shooter online for free on GameZone. Match colorful bubbles, clear the board and beat your high score.">
+        content="Play Bubble Shooter online for free on GameZone. Aim, shoot and match colorful bubbles to clear the board and beat your high score.">
 
     <meta name="robots" content="index, follow">
-
     <meta name="author" content="GameZone">
 
     <link rel="canonical"
@@ -23,7 +22,7 @@
         content="Bubble Shooter - Play Free Online | GameZone">
 
     <meta property="og:description"
-        content="Match colorful bubbles, clear the board and beat your high score in this free Bubble Shooter game.">
+        content="Aim, shoot and match colorful bubbles in this fun free Bubble Shooter game.">
 
     <meta property="og:type" content="website">
 
@@ -32,45 +31,10 @@
 
     <meta property="og:site_name" content="GameZone">
 
-
-    <!-- Google Analytics -->
-
-    <script async
-        src="https://www.googletagmanager.com/gtag/js?id=G-ZQTNL81HJW">
-    </script>
-
-    <script>
-
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'G-ZQTNL81HJW');
-
-    </script>
-
-
-    <!-- Google AdSense -->
-
-    <script async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5052530061389459"
-        crossorigin="anonymous">
-    </script>
-
-
     <link rel="stylesheet" href="bubble.css">
-
 </head>
 
-
 <body>
-
-
-    <!-- Header -->
 
     <header class="game-header">
 
@@ -87,63 +51,41 @@
     </header>
 
 
-    <!-- Advertisement -->
-
-    <div class="ad-container">
-
-        <span>ADVERTISEMENT</span>
-
-    </div>
-
-
-    <!-- Game -->
-
     <main class="game-container">
-
 
         <div class="game-info">
 
             <div>
-
                 <span>🏆 High Score</span>
-
-                <strong id="highScore">
-                    0
-                </strong>
-
+                <strong id="highScore">0</strong>
             </div>
 
-
             <div>
-
                 <span>🎯 Shots</span>
-
-                <strong id="shots">
-                    0
-                </strong>
-
+                <strong id="shots">0</strong>
             </div>
 
         </div>
 
 
-        <div class="canvas-wrapper">
+        <div class="game-wrapper">
 
             <canvas id="gameCanvas"
                 width="480"
-                height="620">
+                height="700">
             </canvas>
 
 
-            <!-- Start Screen -->
+            <div id="startScreen" class="overlay">
 
-            <div id="startScreen"
-                class="overlay">
+                <div class="bubble-logo">
+                    🫧
+                </div>
 
-                <h2>🫧 Bubble Shooter</h2>
+                <h2>Bubble Shooter</h2>
 
                 <p>
-                    Match 3 or more bubbles!
+                    Aim with your finger and release to shoot!
                 </p>
 
                 <button onclick="startGame()">
@@ -153,20 +95,17 @@
             </div>
 
 
-            <!-- Game Over -->
+            <div id="gameOver" class="overlay">
 
-            <div id="gameOver"
-                class="overlay">
+                <div class="bubble-logo">
+                    💥
+                </div>
 
-                <h2>
-                    Game Over 😢
-                </h2>
+                <h2>Game Over</h2>
 
                 <p>
                     Score:
-                    <strong id="finalScore">
-                        0
-                    </strong>
+                    <strong id="finalScore">0</strong>
                 </p>
 
                 <button onclick="restartGame()">
@@ -176,14 +115,13 @@
             </div>
 
 
-            <!-- Win -->
+            <div id="winScreen" class="overlay">
 
-            <div id="winScreen"
-                class="overlay">
+                <div class="bubble-logo">
+                    🎉
+                </div>
 
-                <h2>
-                    🎉 You Win!
-                </h2>
+                <h2>You Win!</h2>
 
                 <p>
                     Amazing! Board cleared.
@@ -191,9 +129,7 @@
 
                 <p>
                     Score:
-                    <strong id="winScore">
-                        0
-                    </strong>
+                    <strong id="winScore">0</strong>
                 </p>
 
                 <button onclick="restartGame()">
@@ -205,51 +141,26 @@
         </div>
 
 
-        <!-- Mobile Controls -->
+        <div class="next-bubble">
 
-        <div class="mobile-controls">
+            <span>Next</span>
 
-            <button
-                onclick="moveAim(-1)">
-                ⬅️
-            </button>
-
-            <button
-                onclick="shootBubble()">
-                🎯 SHOOT
-            </button>
-
-            <button
-                onclick="moveAim(1)">
-                ➡️
-            </button>
+            <div id="nextBubble">
+                🟣
+            </div>
 
         </div>
 
 
         <p class="instructions">
-
-            Move aim with
-            <b>←</b>
-            <b>→</b>
-            and press
-            <b>Space</b>
-            to shoot.
-
+            👆 Drag your finger to aim • Release to shoot
         </p>
-
 
     </main>
 
 
-    <!-- Advertisement -->
-
-    <div class="ad-container bottom-ad">
-
-        <span>
-            ADVERTISEMENT
-        </span>
-
+    <div class="ad-container">
+        <span>ADVERTISEMENT</span>
     </div>
 
 
@@ -258,3 +169,4 @@
 </body>
 
 </html>
+

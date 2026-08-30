@@ -58,7 +58,7 @@ function startGame() {
 
     clearInterval(gameLoop);
 
-    gameLoop = setInterval(drawGame, 110);
+    gameLoop = setInterval(drawGame, 140);
 }
 
 
